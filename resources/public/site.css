@@ -1,0 +1,202 @@
+@-ms-viewport{
+    width: device-width;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    font-size: 18px;
+    font-family: 'Alegreya' !important;
+    background-image: url("/images/bg.png");
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div#app {
+    margin: auto;
+    max-width: 1000px;
+}
+
+p {
+	color:#A99283 !important;
+    line-height: 1.2;
+    font-style: normal; 
+    font-weight: 400;
+}
+
+h3,h1,h2 {
+	color:#798B7A !important;
+	font-family: 'Alegreya SC' !important;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    padding: 15px;
+    line-height: 30px; 
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 43px;
+    position: fixed;
+    height: 66;
+    background-color: black;
+    width: 100%;
+    z-index: 1000;
+}
+
+button, a.action {
+    width: 265px;
+    max-width: 100%;
+    margin: 40px auto 40px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.33;
+    text-align: center;
+    color: #393e41;
+    background-color: rgb(60, 200, 85);
+    cursor: pointer;
+}
+
+a.action {
+    width: 365px;
+    max-width: 100%;
+    margin: 40px auto 40px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.33;
+    text-align: center;
+    color: #393e41;
+    background-color: rgb(60, 200, 85);
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin: 80px auto 60px;
+    width: 265px;
+    display: block;
+    font-size: 22px;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield;
+    padding: .8125rem 1rem .75rem;
+}
+
+
+hr {
+    border-top: 1px solid grey;
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+  
+
+@media (max-width: 900px)
+{
+    div.corrections {
+        display: block;
+    }
+    
+    div.corrections > div {
+    width: 100%;
+    }
+}
+
+@media (max-device-width: 568px), (max-device-height: 700px)
+{
+    h2 {
+        font-size: 17px;
+        padding: 7px;
+        line-height: 23px; 
+    }
+
+    div.answer {
+        padding: 11px;
+        font-size: 19px;
+        margin: 10px;
+    }
+
+    header {
+        padding: 8px;
+        font-size: 23px;
+        height: 46;
+    }
+
+    div.slide {
+        padding-top: 47px;
+    }
+
+    a.action {
+        width: 265px;
+    }
+}
