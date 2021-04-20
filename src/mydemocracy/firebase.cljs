@@ -8,14 +8,14 @@
 (def firebase (.-default firebase-app))
 
 (defonce firebase-app-info
-  {:apiKey "AIzaSyC8mi00H00Se9N5BMCmruRzzWdEIrWpE_s"
+  {:apiKey "AIzaSyCiumBbaz0T7wVienNn_y1dM4xnPp85bAU"
    :authDomain "mydemocracy.firebaseapp.com"
    :databaseURL "https://mydemocracy.firebaseio.com"
    :projectId "mydemocracy"
    :storageBucket "mydemocracy.appspot.com"
-   :messagingSenderId "1000079651481"
-   :appId "1:1000079651481:web:495f0633d21db9d2f93e08"
-   :measurementId "G-J9L9DD7RCV"})
+   :messagingSenderId "765375135343"
+   :appId "1:765375135343:web:18b2dbb41b671901e8d79a"
+   :measurementId "G-X6XGY3YCY9"})
 
 (defn- user [firebase-user]
   (when firebase-user
