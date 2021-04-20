@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "firebase": "8.3.1"
+    "firebase": "8.3.1",
+    "govuk-frontend": "3.11.0"
   }
 }
