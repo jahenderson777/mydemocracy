@@ -19,11 +19,10 @@
 
 (defn header []
   [:div
-   [:img {:src "images/logo.png"}]
-   [:h3 "Bristol Veg Boxes"]
-   [:h2 "BOXES & PACKAGING"]
-   [:p "We use an assortment of recycled boxes from various fruit and veg wholesalers around Bristol. Boxes can be collected if left outside the following week.
-Plastic bags can also be returned to us for recycling!"]])
+   
+   [:h3 "My Democracy"]
+   
+   ])
 
 (defn products []
   (uix/with-effect []
