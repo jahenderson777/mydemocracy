@@ -26,9 +26,9 @@
 
 (defn products []
   (uix/with-effect []
-    (firebase/collection-on-snapshot ["products"] #(xf/dispatch [:set [:products] %])))
-  (util/for-idx i [product (<sub [:get :products])]
-                [:div.product (pr-str product)]))
+    (firebase/collection-on-snapshot ["letters"] #(xf/dispatch [:set [:letters] %])))
+  (util/for-idx i [letter (<sub [:get :letters])]
+                [:div.letter (pr-str letter)]))
 
 (defn logged-in []
   [:<>
