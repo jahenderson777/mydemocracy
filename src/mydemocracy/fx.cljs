@@ -36,4 +36,10 @@
    (assoc-in db ks v)))
 
 
+(xf/reg-event-fx
+ :submit-letter
+ (fn [db _]
+   (let [{:keys [letter-content]} db]
+     {:firebase/add {:path ["letters"]
+                     :doc {:txt letter-content}}})))
 

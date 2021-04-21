@@ -138,3 +138,11 @@
       (onSnapshot (fn [querySnapshot]
                     (f (for [doc (js->clj (.-docs querySnapshot))]
                          (js->clj (.data doc))))))))
+
+
+(defn add [_ [_ {:keys [path doc]}]] 
+  (.. firebase firestore
+      (collection (str/join "/" path))
+      (add (clj->js doc))))
+(xf/reg-fx :firebase/add add)
+
