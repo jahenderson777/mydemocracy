@@ -146,3 +146,10 @@
       (add (clj->js doc))))
 (xf/reg-fx :firebase/add add)
 
+(defn get-once [path f]
+  (.. firebase firestore
+      (collection (str/join "/" path))
+      get
+      (then (fn [querySnapshot]
+             (f (for [doc (js->clj (.-docs querySnapshot))]
+                  (js->clj (.data doc))))))))
