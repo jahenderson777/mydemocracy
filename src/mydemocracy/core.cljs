@@ -153,8 +153,8 @@
       [:div {:class "govuk-grid-column-two-thirds"}
        [:h1 {:class "govuk-heading-l"} "OurGov"]
        [:p "Activating and amplifying our democratic voices"]
-       [:p "The aim of this site is to help the public write letters to their MPs."]
-       [:p "The site will contain a searchable catalogue of letters that others have written on certain topics, details of the ‘stock replies’ that MPs give out on certain issues (so that people can address these arguments directly in advance), and a composition help tool (like predictive text but specifically designed for writing letters to an MP on your issue)."]
+       [:p "The aim of OurGov is to help the public write letters to their MPs."]
+       [:p "The site will contain a searchable catalogue of letters that others have written on certain topics, details of the ‘stock replies’ that MPs give out on certain issues (so that people can address these arguments directly in advance), and a letter composition tool (like predictive text but specifically designed for writing letters to an MP on your issue)."]
        [:p "The OURGOV.UK site is in not an official government service, but a non-profit initiative run by members of the public to increase public engagement with their government."]]]
      
      [layout-2-thirds-col {:title "OurGov"
